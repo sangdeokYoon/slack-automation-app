@@ -110,7 +110,7 @@ def app_home_opened_callback(client: slack_sdk.WebClient, event: dict, logger: l
             view={
                 "type": "home",
                 "blocks": [
-                    {"type": "header", "text": {"type": "plain_text", "text": "인프라보안팀 업무 신청", "emoji": True}},
+                    {"type": "header", "text": {"type": "plain_text", "text": "인프라보안팀 업무 신청22", "emoji": True}},
                     {
                         "type": "section",
                         "text": {"type": "mrkdwn", "text": "웹사이트 접근 허용 신청.\n어쩌고 저쩌고 주절주절"},
