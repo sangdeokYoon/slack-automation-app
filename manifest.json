@@ -1,0 +1,82 @@
+{
+    "_metadata": {
+      "major_version": 1,
+      "minor_version": 1
+  },
+    "display_information": {
+        "name": "인프라보안팀 업무요청",
+        "description": "[테스트] 인프라보안팀 업무요청 App",
+        "background_color": "#737887",
+        "long_description": "인프라보안팀 내부 앱입니다 사용금지!\r\n\r\nPADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING PADDING"
+    },
+    "features": {
+        "app_home": {
+            "home_tab_enabled": true,
+            "messages_tab_enabled": true,
+            "messages_tab_read_only_enabled": true
+        },
+        "bot_user": {
+            "display_name": "bot-infrasec-requests",
+            "always_online": false
+        }
+    },
+    "oauth_config": {
+        "scopes": {
+            "bot": [
+                "chat:write",
+                "workflow.steps:execute",
+                "users:read",
+                "users:read.email"
+            ]
+        }
+    },
+    "settings": {
+        "event_subscriptions": {
+            "request_url": "https://kzjwfzdq45kzebm4weu6z6saqy0rekba.lambda-url.ap-northeast-2.on.aws/",
+            "bot_events": [
+                "app_home_opened",
+                "function_executed",
+                "workflow_step_execute"
+            ]
+        },
+        "interactivity": {
+            "is_enabled": true
+        },
+        "org_deploy_enabled": true,
+        "socket_mode_enabled": true,
+        "token_rotation_enabled": false,
+        "hermes_app_type": "remote",
+        "function_runtime": "remote"
+    },
+    "functions": {
+        "969c8e": {
+            "title": "New Function 969c8e",
+            "description": "함수다",
+            "input_parameters": {
+                "username": {
+                    "type": "string",
+                    "title": "Username",
+                    "description": "",
+                    "is_required": true,
+                    "name": "username"
+                },
+                "website": {
+                    "type": "string",
+                    "title": "Website",
+                    "description": "",
+                    "is_required": true,
+                    "name": "website"
+                }
+            },
+            "output_parameters": {
+                "result": {
+                    "type": "string",
+                    "title": "Result",
+                    "description": "",
+                    "is_required": true,
+                    "name": "result"
+                }
+            }
+        }
+    }
+}

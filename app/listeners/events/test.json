@@ -1,0 +1,136 @@
+{
+  "type": "view_submission",
+  "team": null,
+  "user": {
+    "id": "U08CW1MFEJE",
+    "username": "feistel",
+    "name": "feistel",
+    "team_id": "T08CY6VK7QU"
+  },
+  "api_app_id": "A08D356UGF5",
+  "token": "SEgLhjFjLY0uWbCXD4woM5wP",
+  "trigger_id": "8432342207351.8436967031841.e3157b54e96ddf16a7a806f319e194cf",
+  "view": {
+    "id": "V08CQ9TPP0X",
+    "team_id": "T08CY6VK7QU",
+    "type": "modal",
+    "blocks": [
+      {
+        "type": "input",
+        "block_id": "aD+8Y",
+        "label": {
+          "type": "plain_text",
+          "text": "\uc811\uadfc \ud5c8\uc6a9\uc774 \ud544\uc694\ud558\uc2e0 \uc0ac\uc720\uc5d0 \ub300\ud574 \uac04\ub2e8\ud788 \uae30\uc7ac\ud574\uc8fc\uc138\uc694.",
+          "emoji": true
+        },
+        "optional": false,
+        "dispatch_action": false,
+        "element": {
+          "type": "plain_text_input",
+          "action_id": "p_reason",
+          "multiline": true,
+          "dispatch_action_config": {
+            "trigger_actions_on": ["on_enter_pressed"]
+          }
+        }
+      },
+      {
+        "type": "input",
+        "block_id": "9w0Q+",
+        "label": {
+          "type": "plain_text",
+          "text": "\uc0ac\uc6a9\uc790\ub4e4\uc744 \uc120\ud0dd\ud574\uc8fc\uc138\uc694",
+          "emoji": true
+        },
+        "optional": false,
+        "dispatch_action": false,
+        "element": {
+          "type": "multi_users_select",
+          "action_id": "p_users",
+          "placeholder": {
+            "type": "plain_text",
+            "text": "Select users",
+            "emoji": true
+          }
+        }
+      },
+      {
+        "type": "input",
+        "block_id": "jTGRa",
+        "label": {
+          "type": "plain_text",
+          "text": "\uc0ac\uc6a9\ud558\uc2e4 \uad6c\uac04\uc744 \uc54c\ub824\uc8fc\uc138\uc694 (ex : Local, VI, VD, VP)",
+          "emoji": true
+        },
+        "optional": false,
+        "dispatch_action": false,
+        "element": {
+          "type": "multi_static_select",
+          "action_id": "p_devices",
+          "placeholder": {
+            "type": "plain_text",
+            "text": "Select options",
+            "emoji": true
+          },
+          "options": [
+            {
+              "text": { "type": "plain_text", "text": "Local", "emoji": true },
+              "value": "Local"
+            },
+            {
+              "text": { "type": "plain_text", "text": "VI", "emoji": true },
+              "value": "VI"
+            },
+            {
+              "text": { "type": "plain_text", "text": "VD", "emoji": true },
+              "value": "VD"
+            }
+          ]
+        }
+      }
+    ],
+    "private_metadata": "",
+    "callback_id": "website-unblock-req",
+    "state": {
+      "values": {
+        "aD+8Y": { "p_reason": { "type": "plain_text_input", "value": "a" } },
+        "9w0Q+": {
+          "p_users": {
+            "type": "multi_users_select",
+            "selected_users": ["U08CJPK3UVA", "U08CVNAKVS6"]
+          }
+        },
+        "jTGRa": {
+          "p_devices": {
+            "type": "multi_static_select",
+            "selected_options": [
+              {
+                "text": { "type": "plain_text", "text": "VI", "emoji": true },
+                "value": "VI"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "hash": "1739442688.HQsyhKTC",
+    "title": {
+      "type": "plain_text",
+      "text": "\uc6f9\uc0ac\uc774\ud2b8 \uc811\uadfc \ud5c8\uc6a9 \uc2e0\uccad",
+      "emoji": true
+    },
+    "clear_on_close": false,
+    "notify_on_close": false,
+    "close": { "type": "plain_text", "text": "\ucde8\uc18c", "emoji": true },
+    "submit": { "type": "plain_text", "text": "\uc2e0\uccad", "emoji": true },
+    "previous_view_id": null,
+    "root_view_id": "V08CQ9TPP0X",
+    "app_id": "A08D356UGF5",
+    "external_id": "",
+    "app_installed_team_id": "E08CUUF0XQR",
+    "bot_id": "B08CNN3DJF9"
+  },
+  "response_urls": [],
+  "is_enterprise_install": true,
+  "enterprise": { "id": "E08CUUF0XQR", "name": "\uc7a1\ucf54\ub9ac\uc544" }
+}
